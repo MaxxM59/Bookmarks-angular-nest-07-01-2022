@@ -1,0 +1,25 @@
+@import '../node_modules/@angular/material/theming';
+@include mat-core();
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+// Theme
+$primary: mat-palette($mat-indigo);
+$accent: mat-palette($mat-pink, A200, A100, A400);
+
+a {
+    color: mat-color($accent);
+    cursor: pointer;
+    text-decoration: underline;
+}
+li {
+    list-style-type: none;
+}
+.mat-dialog-container {
+    border-radius: 20px !important;
+}
